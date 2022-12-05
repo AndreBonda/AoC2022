@@ -45,7 +45,7 @@ const rounds: string[] = fs.readFileSync(path.join(__dirname, '../input2.txt'), 
 let result = 0;
 
 for (let i = 0; i < rounds.length; i++) {
-        result += match.get(rounds[i]) ?? 0;
+        result += match.get(rounds[i])!;
 }
 
 console.log(result);
