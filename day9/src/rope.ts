@@ -60,14 +60,14 @@ export class Rope {
     }
 
     private moveFollowingKnot(previous: Position, following: Position) {
-        if (previous.y === following.y && this.getDistance(previous, following) == 2) // vertical alignment between knots
+        if (previous.y === following.y && this.getDistance(previous, following) == 2) // horizontal alignment knots
         {
             if (previous.x > following.x)
                 following.x++;
             else
                 following.x--;
         }
-        else if (previous.x === following.x && this.getDistance(previous, following) == 2) // orizontal alignment between knots
+        else if (previous.x === following.x && this.getDistance(previous, following) == 2) // vertical alignment between knots
         {
             if (previous.y > following.y)
                 following.y++;
