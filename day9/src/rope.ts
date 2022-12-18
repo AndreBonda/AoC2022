@@ -37,7 +37,6 @@ export class Rope {
     }
 
     getTailPositions(): number {
-        console.log(this.tailPositions);
         return this.tailPositions.size;
     }
 
@@ -60,7 +59,7 @@ export class Rope {
     }
 
     private moveFollowingKnot(previous: Position, following: Position) {
-        if (previous.y === following.y && this.getDistance(previous, following) == 2) // horizontal alignment knots
+        if (previous.y === following.y && this.getDistance(previous, following) == 2) // horizontal alignment between knots
         {
             if (previous.x > following.x)
                 following.x++;
